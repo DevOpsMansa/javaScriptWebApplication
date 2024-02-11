@@ -68,4 +68,12 @@ Once you have completed your project, answer the following questions to help sol
 
 "
 
-# javaScriptWebApplication
+## Reosurces
+* The Cat API - https://thecatapi.com/
+* The Dog API - https://www.thedogapi.com/
+* Free APIs - https://free-apis.github.io/#/browse
+* 
+
+
+## Author
+Eric (Mansa) Marah - Student Per Scholas
