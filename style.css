@@ -6,8 +6,8 @@
     box-sizing: border-box;
 }
 :root{
-    --tenne-tawny: #d65108;
-    --tenne-tawny-dark: #b54507;
+    --tenne-tawny: #FC6736;
+    --tenne-tawny-dark: #FE7A36;
 }
 body{
     font-weight: 300;
@@ -39,7 +39,7 @@ body{
     max-width: 1280px;
     margin: 0 auto;
     padding: 2rem;
-    background: #fff;
+    background: #DCFFB7;
     text-align: center;
 }
 .meal-search{
@@ -174,7 +174,6 @@ body{
     -o-border-radius: 2rem;
 }
 
-
 /* js related */
 .showRecipe{
     display: block;
@@ -264,7 +263,6 @@ body{
     opacity: 0.8;
 }
 
-
 /*  */
 .notFound{
     grid-template-columns: 1fr!important;
@@ -273,11 +271,6 @@ body{
     font-weight: 600;
     width: 100%;
 }
-
-
-
-
-
 
 /* Media Queries */
 @media screen and (min-width: 600px){
