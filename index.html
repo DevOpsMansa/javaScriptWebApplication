@@ -1,65 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Meals For Your Ingredients</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
-  <link rel = "stylesheet" href = "style.css">
-</head>
-<body>
-  
-  <div class = "container">
-    <div class = "meal-wrapper">
-      <div class = "meal-search">
-        <h2 class = "title">Search Meals for Your Ingredients</h2>
-        <blockquote>“A recipe has no soul. You as the cook must bring soul to the recipe.”<br>
-          <cite> - Thomas Keller</cite>
-        </blockquote>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meals For Your Ingredients</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="meal-wrapper">
+        <div class="meal-search">
+          <h2 class="title">Search Meals for Your Ingredients</h2>
+          <blockquote>
+            “A recipe has no soul. You as the cook must bring soul to the
+            recipe.”<br />
+            <cite> - Thomas Keller</cite>
+          </blockquote>
 
-        <div class = "meal-search-box">
-          <input type = "text" class = "search-control" placeholder="Enter an ingredient" id = "search-input">
-          <button type = "submit" class = "search-btn btn" id = "search-btn">
-            <i class = "fas fa-search"></i>
+          <div class="meal-search-box">
+            <input
+              type="text"
+              class="search-control"
+              placeholder="Enter an ingredient"
+              id="search-input"
+            />
+            <button type="submit" class="search-btn btn" id="search-btn">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="meal-result">
+          <h2 class="title">Recipe Results:</h2>
+          <div id="meal"></div>
+        </div>
+
+        <div class="meal-details">
+          <!-- recipe close btn -->
+          <button
+            type="button"
+            class="btn recipe-close-btn"
+            id="recipe-close-btn"
+          >
+            <i class="fas fa-times"></i>
           </button>
-        </div>
-      </div>
 
-      <div class = "meal-result">
-        <h2 class = "title">Recipe Results:</h2>
-        <div id= "meal">
-        </div>
-      </div>
-
-      <div class = "meal-details">
-
-        <!-- recipe close btn -->
-        <button type = "button" class = "btn recipe-close-btn" id = "recipe-close-btn">
-          <i class = "fas fa-times"></i>
-        </button>
-
-        <!-- meal content -->
-        <div class = "meal-details-content">
+          <!-- meal content -->
+          <div class="meal-details-content"></div>
         </div>
       </div>
     </div>
-  </div>
-<form id="updateMealForm">
-    <label for="mealName">Meal Name:</label>
-    <input type="text" id="mealName" name="mealName">
+    <form id="updateMealForm">
+      <p><b>Add to the Flavor:</b></p>
+      <label for="mealName">Meal Name</label>
+      <input type="text" id="mealName" name="mealName" />
 
-    <label for="category">Category:</label>
-    <input type="text" id="category" name="category">
+      <label for="category">Category</label>
+      <input type="text" id="category" name="category" />
 
-    <label for="instructions">Instructions:</label>
-    <textarea id="instructions" name="instructions"></textarea>
+      <label for="instructions">Instructions</label>
+      <textarea id="instructions" name="instructions"></textarea>
 
-    <label for="imageUrl">Image URL:</label>
-    <input type="text" id="imageUrl" name="imageUrl">
+      <label for="imageUrl">Image URL</label>
+      <input type="text" id="imageUrl" name="imageUrl" />
 
-    <button type="submit">Update Meal</button>
-</form>
+      <button type="submit">Update Meal</button>
+    </form>
 
-  <script src = "script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
