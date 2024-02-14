@@ -28,7 +28,6 @@
       <div class = "meal-result">
         <h2 class = "title">Recipe Results:</h2>
         <div id= "meal">
-          
         </div>
       </div>
 
@@ -45,6 +44,21 @@
       </div>
     </div>
   </div>
+<form id="updateMealForm">
+    <label for="mealName">Meal Name:</label>
+    <input type="text" id="mealName" name="mealName">
+
+    <label for="category">Category:</label>
+    <input type="text" id="category" name="category">
+
+    <label for="instructions">Instructions:</label>
+    <textarea id="instructions" name="instructions"></textarea>
+
+    <label for="imageUrl">Image URL:</label>
+    <input type="text" id="imageUrl" name="imageUrl">
+
+    <button type="submit">Update Meal</button>
+</form>
 
   <script src = "script.js"></script>
 </body>
